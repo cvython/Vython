@@ -4,7 +4,7 @@
 * Get The Latest Release For Windows [NOW](https://github.com/dopevog/vython/releases/tag/windowsv1.0)
 * Get The Latest Release For MacOS(Not Released Yet) [NOW]()
 * Get The Latest Release For Linux(Not Released Yet) [NOW]()
--> After downloading the latest release, open the ```app``` folder in the unzipped ```.zip``` file and move this folder to your desired locations. This folder contains the ```vython.exe``` compiled file.
++ After downloading the latest release, open the ```app``` folder in the unzipped ```.zip``` file and move this folder to your desired locations. This folder contains the ```vython.exe``` compiled file.
 
 ## Running A Script
 ```
