@@ -1,7 +1,7 @@
 # **Vython** 
 
 ## Download 
-* Get The Latest Release For Windows [NOW](https://github.com/dopevog/vython/releases/tag/windowsv1.0)
+* Get The Latest Release For Windows [NOW](https://github.com/cvython/Vython/releases/tag/windowsv1.0)
 * Get The Latest Release For MacOS(Not Released Yet) [NOW]()
 * Get The Latest Release For Linux(Not Released Yet) [NOW]()
 
