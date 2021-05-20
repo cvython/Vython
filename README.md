@@ -2,8 +2,8 @@
 
 ## Download 
 * Get The Latest Release For Windows [NOW](https://github.com/cvython/Vython/releases/tag/windowsv1.0)
-* Get The Latest Release For MacOS(Not Released Yet) [NOW]()
-* Get The Latest Release For Linux(Not Released Yet) [NOW]()
+* Get The Latest Release For MacOS(Not Released Yet, Though You Can Build It And Run The Source) [NOW]()
+* Get The Latest Release For Linux(Not Released Yet, Though You Can Build It And Run The Source) [NOW]()
 
 - After downloading the latest release, open the ```app``` folder in the unzipped ```.zip``` file and move this folder to your desired locations. This folder contains the ```vython.exe``` compiled file.
 
@@ -68,6 +68,8 @@ if a > 18 || a > 16
     * Multiplication ➡ '*'
     * Remainder ➡ '%'
 ## Todo
+- [ ] Release Mac Version
+- [ ] Release Linux Version
 - [ ] Add ```while``` loops
 - [ ] Implement Famous Python Modules(eg. Pandas, Numpy, etc)
 - [ ] Make A Website
