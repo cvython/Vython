@@ -72,5 +72,5 @@ if a > 18 || a > 16
 
 
 ## License
-This Project is [MIT Licensed](https://github.com/dopevog/vython/blob/main/LICENSE)
+This Project is [MIT Licensed](https://github.com/cvython/Vython/blob/main/LICENSE)
 
