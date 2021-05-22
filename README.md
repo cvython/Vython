@@ -68,6 +68,7 @@ if a > 18 || a > 16
     * Multiplication ➡ '*'
     * Remainder ➡ '%'
 ## Todo
+- [ ] Fix addition of ```int``` and ```float```
 - [ ] Release Mac Version
 - [ ] Release Linux Version
 - [ ] Add ```while``` loops
