@@ -2,15 +2,19 @@
 
 ## Download 
 Clone the repo from Github:
-```git clone https://github.com/cvython/Vython.git```
+```
+git clone https://github.com/cvython/Vython.git
+```
 Enter Into Its Derectory
-```cd Vython```
+```
+cd Vython
+```
 You're All Set!
 
 
 ## Running A Script
 ```
-$ Vython>python3 vython.py main.vy
+$ python3 vython.py main.vy
 ```
 * The scripts' file extension must be ```.vy```
 
