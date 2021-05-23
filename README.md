@@ -55,6 +55,13 @@ if a > 18 || a > 16
     show("Can Drive")
 }
 ```
+* Check If Variable A Particular *Type*:
+```
+if canbe(a, "int")
+{
+    show("Variable is an integer")
+}
+```
 * Supported Variable Forms:
     * Integer ➡ int()
     * Float ➡ float()
