@@ -1,4 +1,4 @@
-# **Vython 1** 
+# **Vython** 
 
 ## Download & Setup
 * Clone the repo from Github:
