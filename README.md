@@ -1,15 +1,16 @@
 # **Vython** 
 
 ## Download 
-* Get The Latest Release For Windows [NOW](https://github.com/cvython/Vython/releases/tag/windowsv1.0)
-* Get The Latest Release For MacOS(Not Released Yet, Though You Can Build It And Run The Source) [NOW]()
-* Get The Latest Release For Linux(Not Released Yet, Though You Can Build It And Run The Source) [NOW]()
+Clone the repo from Github:
+```git clone https://github.com/cvython/Vython.git```
+Enter Into Its Derectory
+```cd Vython```
+You're All Set!
 
-- After downloading the latest release, open the ```app``` folder in the unzipped ```.zip``` file and move this folder to your desired locations. This folder contains the ```vython.exe``` compiled file.
 
 ## Running A Script
 ```
-PS C:\Users\User\vython>./vython main.vy
+$ Vython>python3 vython.py main.vy
 ```
 * The scripts' file extension must be ```.vy```
 
