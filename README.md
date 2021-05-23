@@ -1,15 +1,15 @@
 # **Vython** 
 
-## Download 
-Clone the repo from Github:
+## Download & Setup
+* Clone the repo from Github:
 ```
 git clone https://github.com/cvython/Vython.git
 ```
-Enter Into Its Derectory
+* Enter Into Its Derectory
 ```
 cd Vython
 ```
-You're All Set!
+* You're All Set!
 
 
 ## Running A Script
@@ -74,8 +74,6 @@ if a > 18 || a > 16
     * Remainder ➡ '%'
 ## Todo
 - [ ] Fix addition of ```int``` and ```float```
-- [ ] Release Mac Version
-- [ ] Release Linux Version
 - [ ] Add ```while``` loops
 - [ ] Implement Famous Python Modules(eg. Pandas, Numpy, etc)
 - [ ] Make A Website
