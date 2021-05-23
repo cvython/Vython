@@ -72,11 +72,6 @@ if a > 18 || a > 16
     * Division ➡ '/'
     * Multiplication ➡ '*'
     * Remainder ➡ '%'
-## Todo
-- [ ] Add ```while``` loops
-- [ ] Implement Famous Python Modules(eg. Pandas, Numpy, etc)
-- [ ] Make A Website
-
 
 ## License
 This Project is [MIT Licensed](https://github.com/cvython/Vython/blob/main/LICENSE)
