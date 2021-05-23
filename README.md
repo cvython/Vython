@@ -73,7 +73,6 @@ if a > 18 || a > 16
     * Multiplication ➡ '*'
     * Remainder ➡ '%'
 ## Todo
-- [ ] Fix addition of ```int``` and ```float```
 - [ ] Add ```while``` loops
 - [ ] Implement Famous Python Modules(eg. Pandas, Numpy, etc)
 - [ ] Make A Website
