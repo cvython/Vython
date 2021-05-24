@@ -1,3 +1,4 @@
+## Tokens
 tokens = {
     'COMMENT': r'#.*',
     'NEWLINE': r'\n+',
