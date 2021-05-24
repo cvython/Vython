@@ -8,7 +8,6 @@ class Errors:
         self.NUMBERARG = "InvalidNumber"
         self.INDEXOUTOFRANGE = "IndexOutOfRange"
 
-
 errors = Errors()
 
 
