@@ -1,9 +1,9 @@
 from rply.token import BaseBox
-from Main.SYS.Types import IntType, StrType, BoolType, FloatType, List, NoneType
+from vython.lang.types import IntType, StrType, BoolType, FloatType, List, NoneType
 import sys
-from Main.Errors import error, errors
+from vython.errors import error, errors
 
-Types = {
+types = {
     "integer": IntType,
     "string": StrType,
     "boolean": BoolType,
@@ -17,14 +17,14 @@ class ExpressionBase(BaseBox):
     def __init__(self, value, kind, var=None):
         self.value = value
         if type(kind) == str:
-            self.kind = Types[kind](self)
+            self.kind = types[kind](self)
         else:
             self.kind = kind
         self.var = var
 
     def eval(self):
         if self.var is not None:
-            from Main.SYS.Variables import ListVar
+            from vython.lang.variables import ListVar
             if type(self.var) == ListVar:
                 self.var.eval()
             self.value, self.kind = self.var.value, self.var.kind
@@ -52,7 +52,7 @@ class ExpressionBase(BaseBox):
 class ExpressionFromList(ExpressionBase):
     def __init__(self, var, indice):
         self.value = ""
-        self.kind = Types["list"](self)
+        self.kind = types["list"](self)
         self.var = var
         self.indice = indice
 

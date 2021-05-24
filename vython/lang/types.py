@@ -1,5 +1,5 @@
 import sys
-from Main.Errors import error, errors
+from vython.errors import error, errors
 
 
 class Type:

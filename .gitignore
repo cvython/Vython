@@ -124,3 +124,6 @@ dmypy.json
 *.DS_Store
 Thumbs.db
 .prof
+
+
+run.bat

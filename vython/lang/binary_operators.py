@@ -1,5 +1,5 @@
 from rply.token import BaseBox
-from Main.Errors import error, errors
+from vython.errors import error, errors
 import sys
 
 

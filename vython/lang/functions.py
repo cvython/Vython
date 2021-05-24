@@ -1,8 +1,8 @@
 from rply.token import BaseBox
-from Main.SYS.Expressions import ExpressionBase
+from vython.lang.expressions import ExpressionBase
 import sys
-from Main.SYS.Types import BoolType, StrType, IntType, FloatType
-from Main.Errors import error, errors
+from vython.lang.types import BoolType, StrType, IntType, FloatType
+from vython.errors import error, errors
 
 
 class CanBe(BaseBox):

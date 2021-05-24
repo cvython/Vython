@@ -1,21 +1,21 @@
 from rply import ParserGenerator
 import sys
 
-from Main.Errors import error, errors
+from vython.errors import error, errors
 
-from Main.SYS.BinaryOperators import Sum, Sub, Mul, Div, Mod, Pow, DivEu
-from Main.SYS.AffectionOperators import SumAffector, SubAffector, DivEuAffector, MulAffector, DivAffector,\
+from vython.lang.binary_operators import Sum, Sub, Mul, Div, Mod, Pow, DivEu
+from vython.lang.affection_operators import SumAffector, SubAffector, DivEuAffector, MulAffector, DivAffector,\
     ModAffector, PowAffector
-from Main.SYS.Expressions import ExpressionBase, Nothing
-from Main.SYS.Functions import Print, Input, Int, Str, Float, Type, Boolean, CanBe
-from Main.SYS.Variables import Variable, Variables, AffectionVar, ListVar
-from Main.SYS.UniqueOperators import Increment, Decrement
-from Main.SYS.Comparators import Egal, Less, LessOrEgal, More, MoreOrEgal
-from Main.SYS.Conditions import If, IfElse, Else, ElseIf, IfElseIf, IfElseIfElse, ElseIfs
-from Main.SYS.LogicOperators import And, Or, Not
-from Main.SYS.Statements import Statement, StatementList
-from Main.SYS.Loops import Loop, While
-from Main.SYS.Types import List, MemberType
+from vython.lang.expressions import ExpressionBase, Nothing
+from vython.lang.functions import Print, Input, Int, Str, Float, Type, Boolean, CanBe
+from vython.lang.variables import Variable, Variables, AffectionVar, ListVar
+from vython.lang.unique_operators import Increment, Decrement
+from vython.lang.comparators import Egal, Less, LessOrEgal, More, MoreOrEgal
+from vython.lang.conditions import If, IfElse, Else, ElseIf, IfElseIf, IfElseIfElse, ElseIfs
+from vython.lang.logic_operators import And, Or, Not
+from vython.lang.statements import Statement, StatementList
+from vython.lang.loops import Loop, While
+from vython.lang.types import List, MemberType
 
 
 class Parser:

@@ -14,7 +14,7 @@ cd Vython
 
 ## Running A Script
 ```
-$ python3 vython.py main.vy
+$ python3 vython.py vython.vy
 ```
 * The scripts' file extension must be ```.vy```
 
@@ -78,8 +78,8 @@ if canbe(a, "int")
     * Subtraction ➡ '-'
     * Division ➡ '/'
     * Multiplication ➡ '*'
-    * Remainder ➡ '%'
+    * Revythonder ➡ '%'
 
 ## License
-This Project is [MIT Licensed](https://github.com/cvython/Vython/blob/main/LICENSE)
+This Project is [MIT Licensed](https://github.com/cvython/Vython/blob/vython/LICENSE)
 

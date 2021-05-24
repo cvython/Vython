@@ -1,6 +1,6 @@
 from rply.token import BaseBox
-from Main.SYS.Expressions import ExpressionBase, ExpressionFromList
-from Main.SYS.Types import List
+from vython.lang.expressions import ExpressionBase, ExpressionFromList
+from vython.lang.types import List
 
 
 class Variables(BaseBox):
