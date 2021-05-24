@@ -3,15 +3,18 @@ import sys
 
 from vython.errors import error, errors
 
-from vython.lang.binary_operators import Sum, Sub, Mul, Div, Mod, Pow, DivEu
-from vython.lang.affection_operators import SumAffector, SubAffector, DivEuAffector, MulAffector, DivAffector,\
-    ModAffector, PowAffector
+from vython.lang.binary_operators import (Sum, Sub, Mul, Div, Mod, Pow, DivEu)
+from vython.lang.affection_operators import (SumAffector, SubAffector,
+                                             DivEuAffector, MulAffector,
+                                             DivAffector, ModAffector,
+                                             PowAffector)
 from vython.lang.expressions import ExpressionBase, Nothing
 from vython.lang.functions import Print, Input, Int, Str, Float, Type, Boolean, CanBe
 from vython.lang.variables import Variable, Variables, AffectionVar, ListVar
 from vython.lang.unique_operators import Increment, Decrement
 from vython.lang.comparators import Egal, Less, LessOrEgal, More, MoreOrEgal
-from vython.lang.conditions import If, IfElse, Else, ElseIf, IfElseIf, IfElseIfElse, ElseIfs
+from vython.lang.conditions import (If, IfElse, Else, ElseIf, IfElseIf,
+                                    IfElseIfElse, ElseIfs)
 from vython.lang.logic_operators import And, Or, Not
 from vython.lang.statements import Statement, StatementList
 from vython.lang.loops import Loop, While
