@@ -81,6 +81,11 @@ if canbe(a, "int")
     * Multiplication ➡ '*'
     * Remainder ➡ '%'
 
+## Credits
+[Vedant K](https://github.com/dopevog)
+[Pranav Baburaj](https://github.com/pranavbaburaj)
+[Harry](https://github.com/fineans)
+
 ## License
 This Project is [MIT Licensed](https://github.com/cvython/Vython/blob/vython/LICENSE)
 
