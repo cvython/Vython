@@ -6,7 +6,6 @@ class UniqueOp(BaseBox):
     def __init__(self, var):
         self.var = var
 
-
 class Increment(UniqueOp):
     def eval(self):
         try:
