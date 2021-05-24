@@ -1,4 +1,3 @@
-
 class Repl(object):
     def __init__(self, prompt_message, lexer, parser):
         self.lexer = lexer

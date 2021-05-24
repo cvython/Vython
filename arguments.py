@@ -3,6 +3,7 @@ import sys
 from repl import Repl
 from run import ExecuteScript
 
+
 class ArgumentParserException(object):
     def __init__(self, message, suggestion=None, fatal=True):
         self.message = message
@@ -18,6 +19,7 @@ class ArgumentParserException(object):
 
         if self.is_fatal:
             sys.exit(1)
+
 
 class ArgumentParser(object):
     commands = None
@@ -35,13 +37,13 @@ class ArgumentParser(object):
                 else:
                     exception = ArgumentParserException(
                         f'Invalid flag: {argument}',
-                        'Flags should start with a comment'
-                    )
+                        'Flags should start with a comment')
                 continue
 
             if argument[2:] not in self.flags:
                 self.flags.append(argument[2:])
         return self.commands, self.flags
+
 
 def create_argument_parser(lexer, parser):
     argument_parser = ArgumentParser()
@@ -51,5 +53,7 @@ def create_argument_parser(lexer, parser):
     elif command == 'help':
         print("Showing help")
     else:
-        ExecuteScript(command, error=ArgumentParserException, lexer=lexer, parser=parser)
-
+        ExecuteScript(command,
+                      error=ArgumentParserException,
+                      lexer=lexer,
+                      parser=parser)

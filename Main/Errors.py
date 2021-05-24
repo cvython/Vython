@@ -16,12 +16,13 @@ def error(typeerror, message, info):
     typeselements = info["type"].split(", ")
     print(typeerror, ":", message)
     if "token" in typeselements:
-        print(" - Position : Lign", info["token"].getsourcepos().lineno, "| Column",
-              info["token"].getsourcepos().colno)
+        print(" - Position : Lign", info["token"].getsourcepos().lineno,
+              "| Column", info["token"].getsourcepos().colno)
         if typeerror == errors.NOTDECLARED:
             print(" - Name :", info["token"].getstr())
     if "var" in typeselements:
-        print(" - Variable : Name =", info["var"].name, "| Type =", info["var"].kind.tostr())
+        print(" - Variable : Name =", info["var"].name, "| Type =",
+              info["var"].kind.tostr())
     if "member" in typeselements:
         print(" - Member :", info["member"])
     if "value" in typeselements:

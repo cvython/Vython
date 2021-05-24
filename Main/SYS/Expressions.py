@@ -66,7 +66,7 @@ class ExpressionFromList(ExpressionBase):
             error(errors.INDEXOUTOFRANGE, "", {
                 "type": "max, index",
                 "index": self.indice,
-                "max": len(var)-1
+                "max": len(var) - 1
             })
             sys.exit(1)
         self.value, self.kind = var[self.indice].value, var[self.indice].kind

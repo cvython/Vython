@@ -1,7 +1,14 @@
 import os
 
+
 class ExecuteScript(object):
-    def __init__(self, filename=None, from_file=True, content=None, error=None, lexer=None, parser=None):
+    def __init__(self,
+                 filename=None,
+                 from_file=True,
+                 content=None,
+                 error=None,
+                 lexer=None,
+                 parser=None):
         self.filename = filename
         self.from_file = from_file
         self.content = content
