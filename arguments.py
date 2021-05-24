@@ -1,5 +1,6 @@
 import sys
 
+from repl import Repl
 class ArgumentParserException(object):
     def __init__(self, message, suggestion=None, fatal=True):
         self.message = message
@@ -40,14 +41,13 @@ class ArgumentParser(object):
                 self.flags.append(argument[2:])
         return self.commands, self.flags
 
-def create_argument_parser():
+def create_argument_parser(lexer, parser):
     argument_parser = ArgumentParser()
     command, flags = argument_parser.create_argument_parser()
     if not command or command == 'repl':
-        print("Repl")
+        Repl('>>> ', lexer, parser)
     elif command == 'help':
         print("Showing help")
     else:
         print("run")
 
-create_argument_parser()
