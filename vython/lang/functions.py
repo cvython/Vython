@@ -2,7 +2,7 @@ from rply.token import BaseBox
 from vython.lang.expressions import ExpressionBase
 import sys
 from vython.lang.types import BoolType, StrType, IntType, FloatType
-from vython.errors import error, errors
+from vython.errors import error, Errors as errors
 
 
 class CanBe(BaseBox):

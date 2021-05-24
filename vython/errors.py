@@ -1,15 +1,11 @@
 class Errors:
-    def __init__(self):
-        self.NOTDECLARED = "NotDeclared"
-        self.INVALIDTYPE = "InvalidType"
-        self.UNEXPECTEDSYNTAX = "UnexceptedSyntax"
-        self.EXPECTEDSYNTAX = "ExpectedSyntax"
-        self.IMPOSSIBLEOPERATION = "ImpossibleOperation"
-        self.NUMBERARG = "InvalidNumber"
-        self.INDEXOUTOFRANGE = "IndexOutOfRange"
-
-
-errors = Errors()
+    NOTDECLARED = "NotDeclared"
+    INVALIDTYPE = "InvalidType"
+    UNEXPECTEDSYNTAX = "UnexceptedSyntax"
+    EXPECTEDSYNTAX = "ExpectedSyntax"
+    IMPOSSIBLEOPERATION = "ImpossibleOperation"
+    NUMBERARG = "InvalidNumber"
+    INDEXOUTOFRANGE = "IndexOutOfRange"
 
 
 def error(typeerror, message, info):

@@ -1,7 +1,7 @@
 from rply.token import BaseBox
 from vython.lang.types import IntType, StrType, BoolType, FloatType, List, NoneType
 import sys
-from vython.errors import error, errors
+from vython.errors import error, Errors as errors
 
 types = {
     "integer": IntType,
