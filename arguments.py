@@ -1,6 +1,8 @@
 import sys
 
 from repl import Repl
+from run import ExecuteScript
+
 class ArgumentParserException(object):
     def __init__(self, message, suggestion=None, fatal=True):
         self.message = message
@@ -49,5 +51,5 @@ def create_argument_parser(lexer, parser):
     elif command == 'help':
         print("Showing help")
     else:
-        print("run")
+        ExecuteScript(command, error=ArgumentParserException, lexer=lexer, parser=parser)
 
