@@ -1,6 +1,5 @@
 import sys
 
-
 class Errors:
     NOTDECLARED = "NotDeclared"
     INVALIDTYPE = "InvalidType"
