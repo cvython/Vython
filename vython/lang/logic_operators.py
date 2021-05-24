@@ -1,6 +1,5 @@
 from rply.token import BaseBox
 
-
 class LogicOperators(BaseBox):
     def __init__(self, left, right=None):
         self.left = left
