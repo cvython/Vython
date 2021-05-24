@@ -16,7 +16,7 @@ cd Vython
 ```
 $ python3 vython.py main.vy
 ```
-* The scripts' file extension must be ```.vy```
+* The scripts' file extension must be ```.vo```
 
 ## Usage
 * Print:
