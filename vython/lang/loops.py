@@ -1,6 +1,5 @@
 from rply.token import BaseBox
 
-
 class Loop(BaseBox):
     def __init__(self, number, statementlist):
         self.number = number
