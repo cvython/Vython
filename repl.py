@@ -3,7 +3,6 @@ class Repl(object):
         self.lexer = lexer
         self.parser = parser
         self.message = prompt_message
-
         self.create_repl()
 
     def create_repl(self):
