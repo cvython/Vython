@@ -1,6 +1,5 @@
 from rply import ParserGenerator
 import sys
-
 from Main.Errors import error, errors
 
 from Main.SYS.BinaryOperators import Sum, Sub, Mul, Div, Mod, Pow, DivEu
