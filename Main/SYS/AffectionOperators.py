@@ -2,7 +2,6 @@ from rply.token import BaseBox
 import sys
 from Main.Errors import error, errors
 
-
 class AffectionOperator(BaseBox):
     def __init__(self, var, right):
         self.right = right
