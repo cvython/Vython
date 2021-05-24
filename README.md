@@ -82,7 +82,7 @@ if canbe(a, "int")
     * Subtraction ➡ '-'
     * Division ➡ '/'
     * Multiplication ➡ '*'
-    * Revythonder ➡ '%'
+    * Remainder ➡ '%'
 
 ## License
 This Project is [MIT Licensed](https://github.com/cvython/Vython/blob/vython/LICENSE)
