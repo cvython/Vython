@@ -14,11 +14,8 @@ cd Vython
 
 ## Running A Script
 ```
-<<<<<<< HEAD
-$ python3 vython.py vython.vy
-=======
 $ python3 vython.py main.vo
->>>>>>> 032179376e81640826f02ac7bd288119912c6dab
+
 ```
 * The scripts' file extension must be ```.vo```
 
