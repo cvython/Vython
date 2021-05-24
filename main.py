@@ -1,6 +1,11 @@
+<<<<<<< HEAD:main.py
 from vython.lexer import Lexer
 from vython.parser import Parser
 
+=======
+from Main.lexer import Lexer
+from Main.parser import Parser
+>>>>>>> 032179376e81640826f02ac7bd288119912c6dab:vython.py
 from arguments import create_argument_parser
 from tokens import tokens
 

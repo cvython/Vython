@@ -4,7 +4,6 @@ import sys
 from vython.lang.types import BoolType, StrType, IntType, FloatType
 from vython.errors import error, Errors as errors
 
-
 class CanBe(BaseBox):
     def __init__(self, exp, value):
         self.value = value
