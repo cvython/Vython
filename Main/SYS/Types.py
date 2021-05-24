@@ -1,7 +1,6 @@
 import sys
 from Main.Errors import error, errors
 
-
 class Type:
     def __init__(self, exp):
         self.name = ""
