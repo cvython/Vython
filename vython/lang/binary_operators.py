@@ -11,7 +11,6 @@ class BinaryOp(BaseBox):
         else:
             self.kind = self.left.kind
 
-
 class Sum(BinaryOp):
     def eval(self):
         try:
