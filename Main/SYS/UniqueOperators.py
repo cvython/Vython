@@ -2,7 +2,6 @@ from rply.token import BaseBox
 import sys
 from Main.Errors import error, errors
 
-
 class UniqueOp(BaseBox):
     def __init__(self, var):
         self.var = var
