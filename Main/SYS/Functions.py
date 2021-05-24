@@ -4,7 +4,6 @@ import sys
 from Main.SYS.Types import BoolType, StrType, IntType, FloatType
 from Main.Errors import error, errors
 
-
 class CanBe(BaseBox):
     def __init__(self, exp, value):
         self.value = value
