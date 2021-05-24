@@ -8,7 +8,6 @@ class AffectionOperator(BaseBox):
         self.var = var
         self.kind = var.kind
 
-
 class SumAffector(AffectionOperator):
     def eval(self):
         if self.right.kind == "string":
