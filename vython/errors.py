@@ -1,3 +1,5 @@
+import sys
+
 class Errors:
     NOTDECLARED = "NotDeclared"
     INVALIDTYPE = "InvalidType"
@@ -7,37 +9,51 @@ class Errors:
     NUMBERARG = "InvalidNumber"
     INDEXOUTOFRANGE = "IndexOutOfRange"
 
+class _ThrowException(object):
+    def __init__(self, error_type, message, info):
+        self.elements = info.get("type").split(", ") if info else []
+        self.message = message
+        self.error = error_type 
+        self.info = info
 
-def error(typeerror, message, info):
-    typeselements = info["type"].split(", ")
-    print(typeerror, ":", message)
-    if "token" in typeselements:
-        print(" - Position : Lign", info["token"].getsourcepos().lineno,
-              "| Column", info["token"].getsourcepos().colno)
-        if typeerror == errors.NOTDECLARED:
-            print(" - Name :", info["token"].getstr())
-    if "var" in typeselements:
-        print(" - Variable : Name =", info["var"].name, "| Type =",
-              info["var"].kind.tostr())
-    if "member" in typeselements:
-        print(" - Member :", info["member"])
-    if "value" in typeselements:
-        print(" - Value :", info["value"])
-    if "nbgived" in typeselements:
-        print(" - Number Gived :", info["nbgived"])
-    if "nbwanted" in typeselements:
-        print(" - Number Expected :", info["nbwanted"])
-    if "typegived" in typeselements:
-        print(" - Type Gived :", info["typegived"])
-    if "typewanted" in typeselements:
-        print(" - Type Expected :", info["typewanted"])
-    if "operationtype" in typeselements:
-        print(" - Operation :", info["operationtype"])
-    if "index" in typeselements:
-        print(" - Index :", info["index"])
-    if "max" in typeselements:
-        print(" - Maximum :", info["max"])
-    if "values" in typeselements:
-        print(" - Values :", info["values"][0], "|", info["values"][1])
-    if "types" in typeselements:
-        print(" - Types :", info["types"][0], "|", info["types"][1])
+        self.evoke_exception()
+
+    def evoke_exception(self):
+        print(f"{self.error} : {self.message}")
+
+        if "token" in self.elements:
+            print(" - Position : Lign", self.info["token"].getsourcepos().lineno,
+                "| Column", self.info["token"].getsourcepos().colno)
+            if self.error == Errors.NOTDECLARED:
+                print(" - Name :", self.info["token"].getstr())
+        if "var" in self.elements:
+            print(" - Variable : Name =", self.info["var"].name, "| Type =",
+                self.info["var"].kind.tostr())
+        if "member" in self.elements:
+            print(" - Member :", self.info["member"])
+        if "value" in self.elements:
+            print(" - Value :", self.info["value"])
+        if "nbgived" in self.elements:
+            print(" - Number Gived :", self.info["nbgived"])
+        if "nbwanted" in self.elements:
+            print(" - Number Expected :", self.info["nbwanted"])
+        if "typegived" in self.elements:
+            print(" - Type Gived :", self.info["typegived"])
+        if "typewanted" in self.elements:
+            print(" - Type Expected :", self.info["typewanted"])
+        if "operationtype" in self.elements:
+            print(" - Operation :", self.info["operationtype"])
+        if "index" in self.elements:
+            print(" - Index :", self.info["index"])
+        if "max" in self.elements:
+            print(" - Maximum :", self.info["max"])
+        if "values" in self.elements:
+            print(" - Values :", self.info["values"][0], "|", self.info["values"][1])
+        if "types" in self.elements:
+            print(" - Types :", self.info["types"][0], "|", self.info["types"][1])
+
+
+def error(error_type, message, info):
+    _ThrowException(error_type, message, info)
+    sys.exit()
+    return None
