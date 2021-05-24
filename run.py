@@ -1,6 +1,5 @@
 import os
 
-
 class ExecuteScript(object):
     def __init__(self,
                  filename=None,
