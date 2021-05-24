@@ -141,7 +141,6 @@ class Boolean(BaseBox):
                 })
             sys.exit(1)
 
-
 class Type(BaseBox):
     def __init__(self, exp):
         self.exp = exp
