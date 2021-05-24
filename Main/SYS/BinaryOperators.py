@@ -2,7 +2,6 @@ from rply.token import BaseBox
 from Main.Errors import error, errors
 import sys
 
-
 class BinaryOp(BaseBox):
     def __init__(self, left, right):
         self.left = left
