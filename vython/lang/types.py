@@ -1,6 +1,7 @@
 import sys
 from vython.errors import error, Errors as errors
 
+
 class Type:
     def __init__(self, exp):
         self.name = ""
