@@ -60,11 +60,15 @@ class Print(BaseBox):
 
 class Input(BaseBox):
     def __init__(self, text=""):
-        self.text = text
+        self.text = text[1:-1]
         self.kind = StrType(ExpressionBase("", "string"))
 
     def eval(self):
-        return input(self.text[1:-1])
+        try:
+            data = input(self.text)
+            return data
+        except KeyboardInterrupt:
+            return ''
 
 
 class Int(BaseBox):
