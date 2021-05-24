@@ -1,6 +1,5 @@
 from rply.token import BaseBox
 
-
 class If(BaseBox):
     def __init__(self, condition, statementlist):
         self.condition = condition
