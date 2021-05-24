@@ -1,1 +1,2 @@
-show("Hello World")
+message = "Hello World"
+show(message)
