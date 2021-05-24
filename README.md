@@ -14,7 +14,7 @@ cd Vython
 
 ## Running A Script
 ```
-$ python3 vython.py main.vy
+$ python3 vython.py main.vo
 ```
 * The scripts' file extension must be ```.vo```
 
