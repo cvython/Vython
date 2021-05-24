@@ -76,7 +76,7 @@ class Nothing(BaseBox):
     @staticmethod
     def eval():
         return None
-
+    
     @staticmethod
     def gettokentype():
         return "statement"
