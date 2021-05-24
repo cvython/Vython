@@ -11,13 +11,14 @@ class Type:
     def callmember(self, membre, param):
         self.paramMember = param
         try:
-            return eval("self."+membre+"()")
+            return eval("self." + membre + "()")
         except AttributeError:
-            error(errors.NOTDECLARED, "Unknown Member", {
-                "type": "typeerror, member",
-                "member": membre,
-                "typeerror": self.name
-            })
+            error(
+                errors.NOTDECLARED, "Unknown Member", {
+                    "type": "typeerror, member",
+                    "member": membre,
+                    "typeerror": self.name
+                })
             sys.exit(1)
 
     def tostr(self):
@@ -45,7 +46,7 @@ class StrType(Type):
         return str(value1) + str(value2)
 
     def sub(self, value1, value2):
-        return str(value1)[:len(value1)-value2]
+        return str(value1)[:len(value1) - value2]
 
     def increment(self, value1):
         return value1 + value1
@@ -53,12 +54,13 @@ class StrType(Type):
     def length(self):
         nbarg = 0
         if len(self.paramMember) != nbarg:
-            error(errors.NUMBERARG, "", {
-                "type": "nbwanted, nbgived, member",
-                "member": "length",
-                "nbgived": len(self.paramMember),
-                "nbwanted": nbarg
-            })
+            error(
+                errors.NUMBERARG, "", {
+                    "type": "nbwanted, nbgived, member",
+                    "member": "length",
+                    "nbgived": len(self.paramMember),
+                    "nbwanted": nbarg
+                })
             sys.exit(1)
         return len(self.exp.eval())
 
@@ -120,12 +122,13 @@ class List(Type):
     def length(self):
         nbarg = 0
         if len(self.paramMember) != nbarg:
-            error(errors.NUMBERARG, "", {
-                "type": "nbwanted, nbgived, member",
-                "member": "length",
-                "nbgived": len(self.paramMember),
-                "nbwanted": nbarg
-            })
+            error(
+                errors.NUMBERARG, "", {
+                    "type": "nbwanted, nbgived, member",
+                    "member": "length",
+                    "nbgived": len(self.paramMember),
+                    "nbwanted": nbarg
+                })
             sys.exit(1)
         self.eval()
         return len(self.var)
@@ -133,20 +136,22 @@ class List(Type):
     def remove(self):
         nbarg = 1
         if len(self.paramMember) != nbarg:
-            error(errors.NUMBERARG, "", {
-                "type": "nbwanted, nbgived, member",
-                "member": "length",
-                "nbgived": len(self.paramMember),
-                "nbwanted": nbarg
-            })
+            error(
+                errors.NUMBERARG, "", {
+                    "type": "nbwanted, nbgived, member",
+                    "member": "length",
+                    "nbgived": len(self.paramMember),
+                    "nbwanted": nbarg
+                })
             sys.exit(1)
         if type(self.paramMember[0].kind) != IntType:
-            error(errors.INVALIDTYPE, "", {
-                "type": "typewanted, typegived, member",
-                "member": "remove",
-                "typegived": self.paramMember[0].kind.tostr(),
-                "typewanted": IntType(None).tostr()
-            })
+            error(
+                errors.INVALIDTYPE, "", {
+                    "type": "typewanted, typegived, member",
+                    "member": "remove",
+                    "typegived": self.paramMember[0].kind.tostr(),
+                    "typewanted": IntType(None).tostr()
+                })
             sys.exit(1)
         self.eval()
         value = self.var[self.paramMember[0].eval()]
@@ -166,11 +171,12 @@ class MemberType:
         try:
             self.kind = typesOfMembers[self.name](None)
         except KeyError:
-            error(errors.NOTDECLARED, "Unknown Member", {
-                "type": "typeerror, member",
-                "member": self.name,
-                "typeerror": self.var.gettype().tostr()
-            })
+            error(
+                errors.NOTDECLARED, "Unknown Member", {
+                    "type": "typeerror, member",
+                    "member": self.name,
+                    "typeerror": self.var.gettype().tostr()
+                })
             sys.exit(1)
         self.param = param
 

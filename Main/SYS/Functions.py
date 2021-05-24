@@ -37,12 +37,13 @@ class CanBe(BaseBox):
             except:
                 return False
         else:
-            error(errors.INVALIDTYPE, "", {
-                "type": "operationtype, typegived, typewanted",
-                "typewanted": "integer, string, float, boolean",
-                "typegived": self.value,
-                "operationtype": "CanBe Function"
-            })
+            error(
+                errors.INVALIDTYPE, "", {
+                    "type": "operationtype, typegived, typewanted",
+                    "typewanted": "integer, string, float, boolean",
+                    "typegived": self.value,
+                    "operationtype": "CanBe Function"
+                })
             sys.exit(1)
 
 
@@ -75,11 +76,12 @@ class Int(BaseBox):
         try:
             return int(self.exp.eval())
         except:
-            error(errors.IMPOSSIBLEOPERATION, "", {
-                "type": "operationtype, value",
-                "operationtype": "Become Integer",
-                "value": self.exp.eval()
-            })
+            error(
+                errors.IMPOSSIBLEOPERATION, "", {
+                    "type": "operationtype, value",
+                    "operationtype": "Become Integer",
+                    "value": self.exp.eval()
+                })
             sys.exit(1)
 
 
@@ -92,11 +94,12 @@ class Float(BaseBox):
         try:
             return float(self.exp.eval())
         except:
-            error(errors.IMPOSSIBLEOPERATION, "", {
-                "type": "operationtype, value",
-                "operationtype": "Become Float",
-                "value": self.exp.eval()
-            })
+            error(
+                errors.IMPOSSIBLEOPERATION, "", {
+                    "type": "operationtype, value",
+                    "operationtype": "Become Float",
+                    "value": self.exp.eval()
+                })
             sys.exit(1)
 
 
@@ -109,11 +112,12 @@ class Str(BaseBox):
         try:
             return str(self.exp.eval())
         except:
-            error(errors.IMPOSSIBLEOPERATION, "", {
-                "type": "operationtype, value",
-                "operationtype": "Become String",
-                "value": self.exp.eval()
-            })
+            error(
+                errors.IMPOSSIBLEOPERATION, "", {
+                    "type": "operationtype, value",
+                    "operationtype": "Become String",
+                    "value": self.exp.eval()
+                })
             sys.exit(1)
 
 
@@ -126,11 +130,12 @@ class Boolean(BaseBox):
         try:
             return bool(self.exp.eval())
         except:
-            error(errors.IMPOSSIBLEOPERATION, "", {
-                "type": "operationtype, value",
-                "operationtype": "Become Boolean",
-                "value": self.exp.eval()
-            })
+            error(
+                errors.IMPOSSIBLEOPERATION, "", {
+                    "type": "operationtype, value",
+                    "operationtype": "Become Boolean",
+                    "value": self.exp.eval()
+                })
             sys.exit(1)
 
 

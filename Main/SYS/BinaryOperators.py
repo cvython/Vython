@@ -21,12 +21,16 @@ class Sum(BinaryOp):
             try:
                 return self.left.sum(self.right)
             except:
-                error(errors.IMPOSSIBLEOPERATION, "", {
-                    "type": "values, types, operationtype",
-                    "operationtype": "Addition",
-                    "values": [self.left.eval(), self.right.eval()],
-                    "types": [self.left.kind.tostr(), self.right.kind.tostr()]
-                })
+                error(
+                    errors.IMPOSSIBLEOPERATION, "", {
+                        "type": "values, types, operationtype",
+                        "operationtype": "Addition",
+                        "values": [self.left.eval(),
+                                   self.right.eval()],
+                        "types":
+                        [self.left.kind.tostr(),
+                         self.right.kind.tostr()]
+                    })
                 sys.exit(1)
 
 
@@ -38,12 +42,16 @@ class Sub(BinaryOp):
             try:
                 return self.left.sub(self.right)
             except:
-                error(errors.IMPOSSIBLEOPERATION, "", {
-                    "type": "values, types, operationtype",
-                    "operationtype": "Substraction",
-                    "values": [self.left.eval(), self.right.eval()],
-                    "types": [self.left.kind.tostr(), self.right.kind.tostr()]
-                })
+                error(
+                    errors.IMPOSSIBLEOPERATION, "", {
+                        "type": "values, types, operationtype",
+                        "operationtype": "Substraction",
+                        "values": [self.left.eval(),
+                                   self.right.eval()],
+                        "types":
+                        [self.left.kind.tostr(),
+                         self.right.kind.tostr()]
+                    })
                 sys.exit(1)
 
 
@@ -55,12 +63,16 @@ class Mul(BinaryOp):
             try:
                 return self.left.mul(self.right)
             except:
-                error(errors.IMPOSSIBLEOPERATION, "", {
-                    "type": "values, types, operationtype",
-                    "operationtype": "Multiplication",
-                    "values": [self.left.eval(), self.right.eval()],
-                    "types": [self.left.kind.tostr(), self.right.kind.tostr()]
-                })
+                error(
+                    errors.IMPOSSIBLEOPERATION, "", {
+                        "type": "values, types, operationtype",
+                        "operationtype": "Multiplication",
+                        "values": [self.left.eval(),
+                                   self.right.eval()],
+                        "types":
+                        [self.left.kind.tostr(),
+                         self.right.kind.tostr()]
+                    })
                 sys.exit(1)
 
 
@@ -72,12 +84,16 @@ class Div(BinaryOp):
             try:
                 return self.left.div(self.right)
             except:
-                error(errors.IMPOSSIBLEOPERATION, "", {
-                    "type": "values, types, operationtype",
-                    "operationtype": "Division",
-                    "values": [self.left.eval(), self.right.eval()],
-                    "types": [self.left.kind.tostr(), self.right.kind.tostr()]
-                })
+                error(
+                    errors.IMPOSSIBLEOPERATION, "", {
+                        "type": "values, types, operationtype",
+                        "operationtype": "Division",
+                        "values": [self.left.eval(),
+                                   self.right.eval()],
+                        "types":
+                        [self.left.kind.tostr(),
+                         self.right.kind.tostr()]
+                    })
                 sys.exit(1)
 
 
@@ -89,29 +105,37 @@ class DivEu(BinaryOp):
             try:
                 return self.left.diveu(self.right)
             except:
-                error(errors.IMPOSSIBLEOPERATION, "", {
-                    "type": "values, types, operationtype",
-                    "operationtype": "Euclidean Division",
-                    "values": [self.left.eval(), self.right.eval()],
-                    "types": [self.left.kind.tostr(), self.right.kind.tostr()]
-                })
+                error(
+                    errors.IMPOSSIBLEOPERATION, "", {
+                        "type": "values, types, operationtype",
+                        "operationtype": "Euclidean Division",
+                        "values": [self.left.eval(),
+                                   self.right.eval()],
+                        "types":
+                        [self.left.kind.tostr(),
+                         self.right.kind.tostr()]
+                    })
                 sys.exit(1)
 
 
 class Pow(BinaryOp):
     def eval(self):
         try:
-            return self.left.eval() ** self.right.eval()
+            return self.left.eval()**self.right.eval()
         except:
             try:
                 return self.left.pow(self.right)
             except:
-                error(errors.IMPOSSIBLEOPERATION, "", {
-                    "type": "values, types, operationtype",
-                    "operationtype": "Power",
-                    "values": [self.left.eval(), self.right.eval()],
-                    "types": [self.left.kind.tostr(), self.right.kind.tostr()]
-                })
+                error(
+                    errors.IMPOSSIBLEOPERATION, "", {
+                        "type": "values, types, operationtype",
+                        "operationtype": "Power",
+                        "values": [self.left.eval(),
+                                   self.right.eval()],
+                        "types":
+                        [self.left.kind.tostr(),
+                         self.right.kind.tostr()]
+                    })
                 sys.exit(1)
 
 
@@ -123,10 +147,14 @@ class Mod(BinaryOp):
             try:
                 return self.left.mod(self.right)
             except:
-                error(errors.IMPOSSIBLEOPERATION, "", {
-                    "type": "values, types, operationtype",
-                    "operationtype": "Modulo",
-                    "values": [self.left.eval(), self.right.eval()],
-                    "types": [self.left.kind.tostr(), self.right.kind.tostr()]
-                })
+                error(
+                    errors.IMPOSSIBLEOPERATION, "", {
+                        "type": "values, types, operationtype",
+                        "operationtype": "Modulo",
+                        "values": [self.left.eval(),
+                                   self.right.eval()],
+                        "types":
+                        [self.left.kind.tostr(),
+                         self.right.kind.tostr()]
+                    })
                 sys.exit(1)

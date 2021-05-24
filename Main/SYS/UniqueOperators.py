@@ -18,11 +18,12 @@ class Increment(UniqueOp):
                 self.var.value = self.var.expression().increment()
                 return self.var.value
             except:
-                error(errors.IMPOSSIBLEOPERATION, "", {
-                    "type": "operationtype, var",
-                    "operationtype": "Increase",
-                    "var": self.var
-                })
+                error(
+                    errors.IMPOSSIBLEOPERATION, "", {
+                        "type": "operationtype, var",
+                        "operationtype": "Increase",
+                        "var": self.var
+                    })
                 sys.exit(1)
 
 
@@ -36,9 +37,10 @@ class Decrement(UniqueOp):
                 self.var.value = self.var.expression().decrement()
                 return self.var.value
             except:
-                error(errors.IMPOSSIBLEOPERATION, "", {
-                    "type": "operationtype, var",
-                    "operationtype": "Decrease",
-                    "var": self.var
-                })
+                error(
+                    errors.IMPOSSIBLEOPERATION, "", {
+                        "type": "operationtype, var",
+                        "operationtype": "Decrease",
+                        "var": self.var
+                    })
                 sys.exit(1)
