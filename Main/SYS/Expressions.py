@@ -12,7 +12,6 @@ Types = {
     "none": NoneType
 }
 
-
 class ExpressionBase(BaseBox):
     def __init__(self, value, kind, var=None):
         self.value = value
