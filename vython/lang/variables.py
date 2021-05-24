@@ -2,7 +2,6 @@ from rply.token import BaseBox
 from vython.lang.expressions import ExpressionBase, ExpressionFromList
 from vython.lang.types import List
 
-
 class Variables(BaseBox):
     def __init__(self):
         self.vars = []
