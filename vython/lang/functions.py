@@ -1,8 +1,8 @@
 from rply.token import BaseBox
-from Main.SYS.Expressions import ExpressionBase
+from vython.lang.expressions import ExpressionBase
 import sys
-from Main.SYS.Types import BoolType, StrType, IntType, FloatType
-from Main.Errors import error, errors
+from vython.lang.types import BoolType, StrType, IntType, FloatType
+from vython.errors import error, Errors as errors
 
 class CanBe(BaseBox):
     def __init__(self, exp, value):
@@ -59,11 +59,15 @@ class Print(BaseBox):
 
 class Input(BaseBox):
     def __init__(self, text=""):
-        self.text = text
+        self.text = text[1:-1]
         self.kind = StrType(ExpressionBase("", "string"))
 
     def eval(self):
-        return input(self.text[1:-1])
+        try:
+            data = input(self.text)
+            return data
+        except KeyboardInterrupt:
+            return ''
 
 
 class Int(BaseBox):

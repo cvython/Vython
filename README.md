@@ -15,6 +15,7 @@ cd Vython
 ## Running A Script
 ```
 $ python3 vython.py main.vo
+
 ```
 * The scripts' file extension must be ```.vo```
 
@@ -81,5 +82,5 @@ if canbe(a, "int")
     * Remainder ➡ '%'
 
 ## License
-This Project is [MIT Licensed](https://github.com/cvython/Vython/blob/main/LICENSE)
+This Project is [MIT Licensed](https://github.com/cvython/Vython/blob/vython/LICENSE)
 

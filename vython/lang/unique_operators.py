@@ -1,6 +1,6 @@
 from rply.token import BaseBox
 import sys
-from Main.Errors import error, errors
+from vython.errors import error, Errors as errors
 
 class UniqueOp(BaseBox):
     def __init__(self, var):
