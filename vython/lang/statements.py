@@ -1,6 +1,5 @@
 from rply.token import BaseBox
 
-
 class Statement(BaseBox):
     def __init__(self, exp):
         self.exp = exp
