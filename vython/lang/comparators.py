@@ -1,6 +1,5 @@
 from rply.token import BaseBox
 
-
 class Comparators(BaseBox):
     def __init__(self, left, right):
         self.left = left
