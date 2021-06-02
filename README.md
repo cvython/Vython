@@ -16,7 +16,7 @@ cd Vython
 ```
 $ python3 vython.py main.vo
 ```
-* ~~The scripts' file extension must be ~~```.vo```
+* ~~The scripts' file extension must be~~```.vo```
 * The scripts' file extension can be anything from ```.txt``` to ```.vo```! Though it is recommended to use the file extension ```.vo```.
 
 ## Usage
